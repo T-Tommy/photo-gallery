@@ -29,5 +29,5 @@ test('Input image object and have function return card template', assert => {
     const result = makeCardTemplate(image);
 
     // Assert
-    assert.equal(result, expected);
+    assert.htmlEqual(result, expected);
 });
