@@ -3,12 +3,15 @@ const test = QUnit.test;
 QUnit.module('Making Photocard Template');
 
 function makeCardTemplate(image) {
-    return `
+    const template = document.createElement('template');
+    template.innerHTML = /*html*/ `
     <li>
         <h2>${image.title}</h2>
         <img src="${image.url}">
     </li>
     `;
+    const dom = template.content;
+    return dom;
 }
 
 test('Input image object and have function return card template', assert => {
