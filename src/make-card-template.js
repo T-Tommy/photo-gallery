@@ -1,6 +1,6 @@
 function makeCardTemplate(image) {
     const template = document.createElement('template');
-    template.innerHTML = /*html*/ `
+    template.innerHTML = `
     <li>
         <h2>${image.title}</h2>
         <img src="${image.url}">
